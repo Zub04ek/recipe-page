@@ -77,7 +77,7 @@ ul,
 ol {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 8px;
   padding-inline-start: 24px;
 }
 
@@ -100,10 +100,7 @@ strong {
 }
 
 .overview {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-  padding: 40px 0 20px;
+  padding: 40px 0 5px;
 }
 
 .overview_title,
@@ -113,7 +110,7 @@ strong {
 }
 .section_title {
   color: var(--section-title-color);
-  margin-bottom: 16px;
+  margin-bottom: 18px;
   font-size: 26px;
   line-height: 1;
 }
@@ -121,18 +118,20 @@ strong {
   color: var(--strong-color);
   font-size: 36px;
   line-height: 1;
+  margin-bottom: 24px;
 }
 
 .overview_description {
   letter-spacing: 0.1px;
+  margin-bottom: 30px;
 }
 
 .overview_time {
   background-color: var(--time-background-color);
-  padding: 24px;
+  padding: 18px 24px 24px;
   border-radius: 20px;
 }
-.overview_time h3 {
+.overview_time h2 {
   color: var(--time-title-color);
   margin-bottom: 16px;
   font-size: 20px;
@@ -145,9 +144,6 @@ strong {
 .ingredients,
 .instructions {
   border-bottom: 1px solid var(--border-color);
-}
-.ingredients {
-  padding: 20px 0 30px;
 }
 .ingredients > .section__list > li::marker {
   color: var(--section-title-color);
@@ -197,7 +193,7 @@ footer {
   .container {
     width: 740px;
     border-radius: 24px;
-    margin: 115px auto;
+    margin: 120px auto;
     padding: 40px 38px 0px;
     background-color: var(--recipe-background-color);
   }
