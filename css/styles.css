@@ -50,7 +50,7 @@ body {
   letter-spacing: 0.3px;
   line-height: 1.5;
   margin: auto;
-  /* background-color: var(--page-background-color); */
+  background-color: var(--page-background-color);
   color: var(--text-color);
 }
 
@@ -64,7 +64,9 @@ ol {
 }
 
 img {
+  display: block;
   width: 100%;
+  height: auto;
 }
 
 section {
@@ -75,7 +77,7 @@ ul,
 ol {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 10px;
   padding-inline-start: 24px;
 }
 
@@ -92,13 +94,7 @@ strong {
   font-family: 'OutfitBold', sans-serif;
 }
 
-.container {
-  /* flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center; */
-  /*- min padding = 8px;
-    - max padding = 24px; */
+.info_container {
   padding: 0 28px;
   background-color: var(--recipe-background-color);
 }
@@ -119,6 +115,7 @@ strong {
   color: var(--section-title-color);
   margin-bottom: 16px;
   font-size: 26px;
+  line-height: 1;
 }
 .overview_title {
   color: var(--strong-color);
@@ -135,7 +132,7 @@ strong {
   padding: 24px;
   border-radius: 20px;
 }
-.overview_time h2 {
+.overview_time h3 {
   color: var(--time-title-color);
   margin-bottom: 16px;
   font-size: 20px;
@@ -173,17 +170,20 @@ tr:not(:last-child) {
 
 td {
   width: 50%;
-  padding: 8px 0;
+  padding: 10px 0;
 }
 td:first-child {
-  padding-left: 26px;
+  padding-left: 30px;
 }
 td:last-child {
-  padding-left: 8px;
+  padding-left: 18px;
+  color: var(--section-title-color);
+  font-family: 'OutfitBold', sans-serif;
 }
 
 footer {
   padding: 16px 0;
+  background-color: var(--recipe-background-color);
 }
 .attribution {
   font-size: 11px;
@@ -191,4 +191,29 @@ footer {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    width: 740px;
+    border-radius: 24px;
+    margin: 115px auto;
+    padding: 40px 38px 0px;
+    background-color: var(--recipe-background-color);
+  }
+  .info_container {
+    padding: 0;
+  }
+  img {
+    border-radius: 14px;
+  }
+  .overview_title {
+    font-size: 40px;
+  }
+  .section_title {
+    font-size: 28px;
+  }
+  footer {
+    background-color: var(--page-background-color);
+  }
 }
